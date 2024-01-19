@@ -39,16 +39,18 @@ v1.0 连接属性设置 添加钩子函数，服务器自定义钩子函数存�
 # 2 Conn
     主要属性
         TcpServer
-		Conn
-		ConnID
-		isClosed
-		MsgHandler
-		ExitBuffChan: make(chan bool, 1),
-		msgChan:make(chan []byte), //msgChan初始化
-		msgBuffChan: make(chan []byte,utils.GlobalObject.MaxMsgChanLen),
-		property make(map[string]interface{}), //对链接属性map初始化
+    	Conn
+    	ConnID
+    	isClosed
+    	MsgHandler
+    	ExitBuffChan: make(chan bool, 1),
+    	msgChan:make(chan []byte), //msgChan初始化
+    	msgBuffChan: make(chan []byte,utils.GlobalObject.MaxMsgChanLen),
+    	property make(map[string]interface{}), //对链接属性map初始化
     主要方法
 
 
     ## 注意
     mmo_game是游戏服务器项目代码，引用了zinx服务器下的代码，启动的客户端在mmo_game >  client > client.exe , client_Data(配置文件)  // 启动client.exe 输入服务器的ip和端口  W A S D 鼠标右键旋转
+
+测试
